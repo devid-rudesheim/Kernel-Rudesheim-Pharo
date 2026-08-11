@@ -19,3 +19,9 @@ Rudesheim class >> Column [
 Rudesheim class >> OS [
 	^ OSRudesheim.
 ]
+
+{ #category : 'namespace' }
+Rudesheim class >> Utility [
+
+	^ Smalltalk globals at: #UtilityRudesheim
+]
