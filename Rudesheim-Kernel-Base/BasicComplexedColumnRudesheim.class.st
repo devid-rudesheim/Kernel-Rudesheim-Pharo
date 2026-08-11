@@ -15,52 +15,42 @@ Class {
 
 { #category : 'accessing' }
 BasicComplexedColumnRudesheim >> columns [
-
 	^ columns
 		ifNil:
 		[
 			columns := self defaultColumns.
 		].
-
 ]
 
 { #category : 'accessing' }
 BasicComplexedColumnRudesheim >> defaultColumns [
-
 	^ OrderedCollection new.
-
 ]
 
 { #category : 'accessing' }
 BasicComplexedColumnRudesheim >> evaluationForRead [
-
 	^ evaluationForRead
 		ifNil:
 		[
 			evaluationForRead := self defaultEvaluationForRead.
 		].
-
 ]
 
 { #category : 'accessing' }
 BasicComplexedColumnRudesheim >> evaluationForRead: anObject [
-
-	evaluationForRead := anObject
+	evaluationForRead := anObject.
 ]
 
 { #category : 'accessing' }
 BasicComplexedColumnRudesheim >> evaluationForWrite [
-
 	^ evaluationForWrite
 		ifNil:
 		[
 			evaluationForWrite := self defaultEvaluationForWrite.
 		].
-
 ]
 
 { #category : 'accessing' }
 BasicComplexedColumnRudesheim >> evaluationForWrite: aBlock [
-
-	evaluationForWrite := aBlock
+	evaluationForWrite := aBlock.
 ]

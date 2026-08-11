@@ -11,7 +11,6 @@ Class {
 
 { #category : 'accessing' }
 TVisitorRudesheimTest class >> targetClass [
-
 	^ VisitorForTestRudesheim.
 ]
 
@@ -22,51 +21,37 @@ TVisitorRudesheimTest >> runVisit [
 	|
 
 	results :=
-	{
-		BasicColumnRudesheim.
-		ColumnForNumberRudesheim.
-		ColumnForStringRudesheim.
-		ColumnForDurationRudesheim.
-		ColumnForDateAndTimeRudesheim.
-	}
-		collect:
-		[ :each |
-			self targetClass
-				visit: each new.
-		].
-	
-	self
-		assert:
-		(
-			(
-				results
-					at:		1
-			) second
-		)
-		equals: 	#visitColumnRudesheim:.
+		{BasicColumnRudesheim .  ColumnForNumberRudesheim .  ColumnForStringRudesheim .  ColumnForDurationRudesheim .  ColumnForDateAndTimeRudesheim}
+			collect:
+			[ :each |
+				self targetClass
+					visit:	each new.
+			].
 
-	#(
-		visitColumnForNumberRudesheim:
-		visitColumnForStringRudesheim:
-		visitColumnForDurationRudesheim:
-		visitColumnForDateAndTimeRudesheim:
-	)
+	self
+		assert:	
+		(
+			results
+				at:	1
+		)
+			second
+		equals:	#visitColumnRudesheim:.
+
+	#(visitColumnForNumberRudesheim: visitColumnForStringRudesheim: visitColumnForDurationRudesheim: visitColumnForDateAndTimeRudesheim:)
 		doWithIndex:
 		[ :each :index |
 			self
-				assert:
+				assert:	
 				(
-					(
-						results
-							at:		1 + index
-					) first
+					results
+						at:	1 + index
 				)
-				equals: 	each.
+					first
+				equals:	each.
 		].
 ]
 
 { #category : 'tests' }
 TVisitorRudesheimTest >> testVisit [
-
 	self runVisit.
 ]

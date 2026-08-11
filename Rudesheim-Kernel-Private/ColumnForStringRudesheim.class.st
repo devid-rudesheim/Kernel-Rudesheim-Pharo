@@ -7,7 +7,6 @@ Class {
 
 { #category : 'visiting' }
 ColumnForStringRudesheim >> acceptTVisitorRudesheim: aTVisitorRudesheim [
-
 	^ aTVisitorRudesheim
-		visitColumnForStringRudesheim: self
+		visitColumnForStringRudesheim:	self.
 ]

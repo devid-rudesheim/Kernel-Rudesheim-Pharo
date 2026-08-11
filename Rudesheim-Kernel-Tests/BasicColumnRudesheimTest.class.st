@@ -11,7 +11,6 @@ Class {
 
 { #category : 'accessing' }
 BasicColumnRudesheimTest class >> targetClass [
-
 	^ BasicColumnRudesheim.
 ]
 
@@ -23,45 +22,50 @@ BasicColumnRudesheimTest >> runAcceptTVisitorRudesheim0 [
 
 	visitor :=
 		MockObject new
-			on:			#visitColumnRudesheim:
-			with:		self basicTarget
+			on:	#visitColumnRudesheim:
+			with:	self basicTarget
 			respond:	self sourceValue.
 
 	self
-		assert:
+		assert:	
 		(
 			self basicTarget
-				acceptTVisitorRudesheim: visitor
+				acceptTVisitorRudesheim:	visitor
 		)
-		equals: self expectedValue.
-	
+		equals:	self expectedValue.
+
 	visitor
-		verifyIn: self.
+		verifyIn:	self.
 ]
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> runEvaluationForRead0 [
-
 	self
-		assert:
+		assert:	
 		(
-			self basicTarget evaluationForRead
-				value: self sourceValue asValueHolder
+			self
+				basicTarget
+				evaluationForRead
+				value:	
+				self
+					sourceValue
+					asValueHolder
 		)
-		equals: self expectedValue.
+		equals:	self expectedValue.
 ]
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> runEvaluationForWrite0 [
-
-	self basicTarget evaluationForWrite
-		value: 	self sourceValue
+	self
+		basicTarget
+		evaluationForWrite
+		value:	self sourceValue
 		value:
 		[ :value |
 			self
-				assert:		value
-				equals:		self expectedValue.
-			
+				assert:	value
+				equals:	self expectedValue.
+
 			^ self.
 		].
 
@@ -70,27 +74,28 @@ BasicColumnRudesheimTest >> runEvaluationForWrite0 [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> runRead0 [
-
 	self
-		assert:
+		assert:	
 		(
 			self basicTarget
-				read: self sourceValue asValueHolder
+				read:	
+				self
+					sourceValue
+					asValueHolder
 		)
-		equals: self expectedValue.
+		equals:	self expectedValue.
 ]
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> runWriteTo0 [
-
 	self basicTarget
-		write: 	self sourceValue
+		write:	self sourceValue
 		to:
 		[ :value |
 			self
-				assert:		value
-				equals:		self expectedValue.
-			
+				assert:	value
+				equals:	self expectedValue.
+
 			^ self.
 		].
 
@@ -99,14 +104,11 @@ BasicColumnRudesheimTest >> runWriteTo0 [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testAcceptTVisitorRudesheim [
-
-	self
-		testAcceptTVisitorRudesheim0_0.
+	self testAcceptTVisitorRudesheim0_0.
 ]
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testAcceptTVisitorRudesheim0_0 [
-
 	self
 		sourceValue:	1;
 		expectedValue:	1;
@@ -115,7 +117,6 @@ BasicColumnRudesheimTest >> testAcceptTVisitorRudesheim0_0 [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testEvaluationForRead [
-
 	self
 		testEvaluationForRead0_0;
 		tearDown;
@@ -125,7 +126,6 @@ BasicColumnRudesheimTest >> testEvaluationForRead [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testEvaluationForRead0_0 [
-
 	self
 		sourceValue:	1;
 		expectedValue:	1;
@@ -134,7 +134,6 @@ BasicColumnRudesheimTest >> testEvaluationForRead0_0 [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testEvaluationForRead0_1 [
-
 	self basicTarget
 		evaluationForRead:
 		[ :row |
@@ -149,7 +148,6 @@ BasicColumnRudesheimTest >> testEvaluationForRead0_1 [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testEvaluationForWrite [
-
 	self
 		testEvaluationForWrite0_0;
 		tearDown;
@@ -159,7 +157,6 @@ BasicColumnRudesheimTest >> testEvaluationForWrite [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testEvaluationForWrite0_0 [
-
 	self
 		sourceValue:	1;
 		expectedValue:	1;
@@ -168,7 +165,6 @@ BasicColumnRudesheimTest >> testEvaluationForWrite0_0 [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testEvaluationForWrite0_1 [
-
 	self basicTarget
 		evaluationForWrite:
 		[ :value :row |
@@ -184,7 +180,6 @@ BasicColumnRudesheimTest >> testEvaluationForWrite0_1 [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testRead [
-
 	self
 		testRead0_0;
 		tearDown;
@@ -194,7 +189,6 @@ BasicColumnRudesheimTest >> testRead [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testRead0_0 [
-
 	self
 		sourceValue:	1;
 		expectedValue:	1;
@@ -203,7 +197,6 @@ BasicColumnRudesheimTest >> testRead0_0 [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testRead0_1 [
-
 	self basicTarget
 		evaluationForRead:
 		[ :row |
@@ -218,7 +211,6 @@ BasicColumnRudesheimTest >> testRead0_1 [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testWriteTo [
-
 	self
 		testWriteTo0_0;
 		tearDown;
@@ -228,7 +220,6 @@ BasicColumnRudesheimTest >> testWriteTo [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testWriteTo0_0 [
-
 	self
 		sourceValue:	1;
 		expectedValue:	1;
@@ -237,7 +228,6 @@ BasicColumnRudesheimTest >> testWriteTo0_0 [
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> testWriteTo0_1 [
-
 	self basicTarget
 		evaluationForWrite:
 		[ :value :row |
