@@ -8,8 +8,8 @@ Class {
 		'evaluationForRead',
 		'columns'
 	],
-	#category : 'Rudesheim-Kernel-Visitor',
-	#package : 'Rudesheim-Kernel',
+	#category : 'Rudesheim-Kernel-Base-Visitor',
+	#package : 'Rudesheim-Kernel-Base',
 	#tag : 'Visitor'
 }
 

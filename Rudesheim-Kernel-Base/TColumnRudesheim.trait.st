@@ -2,8 +2,8 @@ Trait {
 	#name : 'TColumnRudesheim',
 	#traits : 'THostForVisitorRudesheim + TSlotRudesheim',
 	#classTraits : 'THostForVisitorRudesheim classTrait + TSlotRudesheim classTrait',
-	#category : 'Rudesheim-Kernel-Visitor',
-	#package : 'Rudesheim-Kernel',
+	#category : 'Rudesheim-Kernel-Base-Visitor',
+	#package : 'Rudesheim-Kernel-Base',
 	#tag : 'Visitor'
 }
 

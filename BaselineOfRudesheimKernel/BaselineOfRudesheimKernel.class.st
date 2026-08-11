@@ -14,17 +14,24 @@ BaselineOfRudesheimKernel >> baseline: spec [
 		do:
 		[
 			spec
-				package: 'Rudesheim-Kernel-Private';
+				package: 'Rudesheim-Kernel-Base';
+
+				package: 'Rudesheim-Kernel-Private'
+				with:
+				[
+					spec
+						requires: #( 'Rudesheim-Kernel-Base' )
+				];
 
 				package: 'Rudesheim-Kernel'
 				with:
 				[
 					spec
-						requires: #( 'Rudesheim-Kernel-Private' )
+						requires: #( 'Rudesheim-Kernel-Base' 'Rudesheim-Kernel-Private' )
 				];
 
 				group:		#core
-				with:		#( 'Rudesheim-Kernel-Private' 'Rudesheim-Kernel' );
+				with:		#( 'Rudesheim-Kernel-Base' 'Rudesheim-Kernel-Private' 'Rudesheim-Kernel' );
 
 				group:		#default
 				with:		#( #core ).

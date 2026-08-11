@@ -23,7 +23,7 @@ BasicColumnRudesheimTest >> runAcceptTVisitorRudesheim0 [
 
 	visitor :=
 		MockObject new
-			on:			#visitObject:
+			on:			#visitColumnRudesheim:
 			with:		self basicTarget
 			respond:	self sourceValue.
 

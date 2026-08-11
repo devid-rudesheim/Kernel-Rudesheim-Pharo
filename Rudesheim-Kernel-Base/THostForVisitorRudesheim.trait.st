@@ -1,7 +1,7 @@
 Trait {
 	#name : 'THostForVisitorRudesheim',
-	#category : 'Rudesheim-Kernel-Visitor',
-	#package : 'Rudesheim-Kernel',
+	#category : 'Rudesheim-Kernel-Base-Visitor',
+	#package : 'Rudesheim-Kernel-Base',
 	#tag : 'Visitor'
 }
 
