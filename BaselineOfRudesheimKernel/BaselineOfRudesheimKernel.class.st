@@ -7,6 +7,8 @@ Class {
 
 { #category : 'baselines' }
 BaselineOfRudesheimKernel >> baseline: spec [
+	<baseline>
+
 	spec
 		for:	#common
 		do:
