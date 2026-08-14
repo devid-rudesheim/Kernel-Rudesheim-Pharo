@@ -8,12 +8,16 @@ Class {
 }
 
 { #category : 'visiting' }
-VisitorForTestRudesheim class >> visitObject:	anObject [
-	
+VisitorForTestRudesheim class >> visitObject: anObject [
 	^
 	{
-		thisContext sender sender selector.
-		thisContext sender selector.
-		thisContext selector.
-	}
+		thisContext
+			sender
+			sender
+			selector.
+		thisContext
+			sender
+			selector.
+		thisContext selector
+	}.
 ]

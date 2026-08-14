@@ -11,8 +11,7 @@ Class {
 
 { #category : 'namespace' }
 Rudesheim class >> Column [
-
-	^ ColumnRudesheim
+	^ ColumnRudesheim.
 ]
 
 { #category : 'namespace' }
@@ -22,6 +21,6 @@ Rudesheim class >> OS [
 
 { #category : 'namespace' }
 Rudesheim class >> Utility [
-
-	^ Smalltalk globals at: #UtilityRudesheim
+	^ Smalltalk globals
+		at:	#UtilityRudesheim.
 ]
