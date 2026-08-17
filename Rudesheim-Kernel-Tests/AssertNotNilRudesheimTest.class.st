@@ -26,5 +26,5 @@ AssertNotNilRudesheimTest >> testNonNilReceiverAnswersItself [
 AssertNotNilRudesheimTest >> testNilReceiverRaisesShouldNotNilRudesheim [
 	self
 		should:	[ nil assertNotNilRudesheim ]
-		raise:	ShouldNotNilRudesheim.
+		raise:	Rudesheim ShouldNotNil.
 ]
