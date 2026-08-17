@@ -20,6 +20,11 @@ Rudesheim class >> OS [
 ]
 
 { #category : 'namespace' }
+Rudesheim class >> ShouldNotNil [
+	^ ShouldNotNilRudesheim.
+]
+
+{ #category : 'namespace' }
 Rudesheim class >> Utility [
 	^ Smalltalk globals
 		at:	#UtilityRudesheim.
