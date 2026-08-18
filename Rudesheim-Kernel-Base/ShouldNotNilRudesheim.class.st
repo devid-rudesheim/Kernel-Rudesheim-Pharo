@@ -9,17 +9,6 @@ Class {
 }
 
 { #category : 'signalling' }
-ShouldNotNilRudesheim class >> assertNotNil: anObject
-withName: aVariableNameString [
-	anObject
-		ifNil:
-		[
-			self
-				signalWithVariableName:	aVariableNameString.
-		].
-]
-
-{ #category : 'signalling' }
 ShouldNotNilRudesheim class >> signalWithVariableName: aString [
 	^ self basicNew
 		signalWithVariableName:	aString.
