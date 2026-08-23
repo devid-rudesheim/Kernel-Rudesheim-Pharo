@@ -21,32 +21,36 @@ TVisitorRudesheimTest >> runVisit [
 	|
 
 	results :=
-		{BasicColumnRudesheim .  ColumnForNumberRudesheim .  ColumnForStringRudesheim .  ColumnForDurationRudesheim .  ColumnForDateAndTimeRudesheim}
-			collect:
-			[ :each |
-				self targetClass
-					visit:	each new.
-			].
+	{
+		Rudesheim Column Basic.
+		Rudesheim Column ForNumber.
+		Rudesheim Column ForString.
+		Rudesheim Column ForDuration.
+		Rudesheim Column ForDateAndTime
+	}
+		collect:
+		[ :each |
+			self targetClass
+				visit:	each new.
+		].
 
 	self
-		assert:	
+		assert:
 		(
 			results
 				at:	1
-		)
-			second
+		) second
 		equals:	#visitColumnRudesheim:.
 
-	#(visitColumnForNumberRudesheim: visitColumnForStringRudesheim: visitColumnForDurationRudesheim: visitColumnForDateAndTimeRudesheim:)
+	#( visitColumnForNumberRudesheim: visitColumnForStringRudesheim: visitColumnForDurationRudesheim: visitColumnForDateAndTimeRudesheim: )
 		doWithIndex:
 		[ :each :index |
 			self
-				assert:	
+				assert:
 				(
 					results
 						at:	1 + index
-				)
-					first
+				) first
 				equals:	each.
 		].
 ]

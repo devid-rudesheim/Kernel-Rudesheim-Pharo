@@ -11,7 +11,7 @@ Class {
 
 { #category : 'accessing' }
 BasicColumnRudesheimTest class >> targetClass [
-	^ BasicColumnRudesheim.
+	^ Rudesheim Column Basic.
 ]
 
 { #category : 'tests' }
