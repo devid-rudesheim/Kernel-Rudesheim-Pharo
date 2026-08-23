@@ -5,5 +5,5 @@ UndefinedObject >> assertNotNilRudesheim [
 	"nil overrides the Object default: signal ShouldNotNilRudesheim instead of
 	answering self."
 
-	ShouldNotNilRudesheim signal.
+	Rudesheim ShouldNotNil signal.
 ]
