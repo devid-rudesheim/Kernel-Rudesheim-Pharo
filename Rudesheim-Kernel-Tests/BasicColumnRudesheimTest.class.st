@@ -27,7 +27,7 @@ BasicColumnRudesheimTest >> runAcceptTVisitorRudesheim0 [
 			respond:	self sourceValue.
 
 	self
-		assert:	
+		assert:
 		(
 			self basicTarget
 				acceptTVisitorRudesheim:	visitor
@@ -41,24 +41,18 @@ BasicColumnRudesheimTest >> runAcceptTVisitorRudesheim0 [
 { #category : 'tests' }
 BasicColumnRudesheimTest >> runEvaluationForRead0 [
 	self
-		assert:	
+		assert:
 		(
-			self
-				basicTarget
-				evaluationForRead
-				value:	
-				self
-					sourceValue
-					asValueHolder
+			self basicTarget evaluationForRead
+				value:
+					self sourceValue asValueHolder
 		)
 		equals:	self expectedValue.
 ]
 
 { #category : 'tests' }
 BasicColumnRudesheimTest >> runEvaluationForWrite0 [
-	self
-		basicTarget
-		evaluationForWrite
+	self basicTarget evaluationForWrite
 		value:	self sourceValue
 		value:
 		[ :value |
@@ -75,13 +69,11 @@ BasicColumnRudesheimTest >> runEvaluationForWrite0 [
 { #category : 'tests' }
 BasicColumnRudesheimTest >> runRead0 [
 	self
-		assert:	
+		assert:
 		(
 			self basicTarget
-				read:	
-				self
-					sourceValue
-					asValueHolder
+				read:
+					self sourceValue asValueHolder
 		)
 		equals:	self expectedValue.
 ]

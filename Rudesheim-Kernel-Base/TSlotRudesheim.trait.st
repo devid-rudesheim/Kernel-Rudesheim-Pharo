@@ -7,10 +7,11 @@ Trait {
 
 { #category : 'meta-object-protocol' }
 TSlotRudesheim >> read: anObject [
-	^ self subclassResponsibility
+	^ self subclassResponsibility.
 ]
 
 { #category : 'meta-object-protocol' }
-TSlotRudesheim >> write: aValue to: anObject [
-	^self subclassResponsibility
+TSlotRudesheim >> write: aValue
+to: anObject [
+	^ self subclassResponsibility.
 ]

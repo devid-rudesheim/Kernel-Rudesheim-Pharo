@@ -9,7 +9,6 @@ Trait {
 
 { #category : 'accessing' }
 TColumnRudesheim >> defaultEvaluationForRead [
-
 	^
 	[ :row |
 		row value.
@@ -18,7 +17,6 @@ TColumnRudesheim >> defaultEvaluationForRead [
 
 { #category : 'visiting' }
 TColumnRudesheim >> defaultEvaluationForWrite [
-
 	^
 	[ :value :row |
 		row
@@ -28,13 +26,11 @@ TColumnRudesheim >> defaultEvaluationForWrite [
 
 { #category : 'accessing' }
 TColumnRudesheim >> evaluationForRead [
-
 	^ self defaultEvaluationForRead.
 ]
 
 { #category : 'accessing' }
 TColumnRudesheim >> evaluationForWrite [
-
 	^
 	[ :row :value |
 		row
@@ -44,22 +40,19 @@ TColumnRudesheim >> evaluationForWrite [
 
 { #category : 'meta-object-protocol' }
 TColumnRudesheim >> read: anObject [
-
 	^ self evaluationForRead
-		value:	anObject 
+		value:	anObject.
 ]
 
 { #category : 'accessing' }
 TColumnRudesheim >> title [
-
-	^ ''
+	^ ''.
 ]
 
 { #category : 'meta-object-protocol' }
-TColumnRudesheim >> write:		aValue
-to:			anObject [
-
+TColumnRudesheim >> write: aValue
+to: anObject [
 	^ self evaluationForWrite
-		value: 	aValue
-		value: 	anObject.
+		value:	aValue
+		value:	anObject.
 ]

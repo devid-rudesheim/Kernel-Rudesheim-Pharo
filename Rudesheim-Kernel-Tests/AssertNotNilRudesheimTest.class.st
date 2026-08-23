@@ -10,6 +10,16 @@ Class {
 }
 
 { #category : 'tests' }
+AssertNotNilRudesheimTest >> testNilReceiverRaisesShouldNotNilRudesheim [
+	self
+		should:
+		[
+			nil assertNotNilRudesheim.
+		]
+		raise:	Rudesheim ShouldNotNil.
+]
+
+{ #category : 'tests' }
 AssertNotNilRudesheimTest >> testNonNilReceiverAnswersItself [
 	|
 		receiver
@@ -20,11 +30,4 @@ AssertNotNilRudesheimTest >> testNonNilReceiverAnswersItself [
 	self
 		assert:	receiver assertNotNilRudesheim
 		equals:	receiver.
-]
-
-{ #category : 'tests' }
-AssertNotNilRudesheimTest >> testNilReceiverRaisesShouldNotNilRudesheim [
-	self
-		should:	[ nil assertNotNilRudesheim ]
-		raise:	Rudesheim ShouldNotNil.
 ]
