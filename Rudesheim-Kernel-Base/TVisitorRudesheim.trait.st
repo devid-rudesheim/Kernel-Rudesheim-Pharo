@@ -7,48 +7,41 @@ Trait {
 
 { #category : 'visiting' }
 TVisitorRudesheim >> visit: aTHostForVisitorRudesheim [
-
 	^ aTHostForVisitorRudesheim
 		acceptTVisitorRudesheim:	self.
 ]
 
 { #category : 'visiting' }
 TVisitorRudesheim >> visitColumnForDateAndTimeRudesheim: aColumnForDateAndTimeRudesheim [
-
 	^ self
-		visitColumnRudesheim: aColumnForDateAndTimeRudesheim
+		visitColumnRudesheim:	aColumnForDateAndTimeRudesheim.
 ]
 
 { #category : 'visiting' }
 TVisitorRudesheim >> visitColumnForDurationRudesheim: aColumnForDurationRudesheim [
-
 	^ self
-		visitColumnRudesheim: aColumnForDurationRudesheim
+		visitColumnRudesheim:	aColumnForDurationRudesheim.
 ]
 
 { #category : 'visiting' }
 TVisitorRudesheim >> visitColumnForNumberRudesheim: aColumnForNumberRudesheim [
-
 	^ self
-		visitColumnRudesheim: aColumnForNumberRudesheim
+		visitColumnRudesheim:	aColumnForNumberRudesheim.
 ]
 
 { #category : 'visiting' }
 TVisitorRudesheim >> visitColumnForStringRudesheim: aColumnForStringRudesheim [
-
 	^ self
-		visitColumnRudesheim: aColumnForStringRudesheim
+		visitColumnRudesheim:	aColumnForStringRudesheim.
 ]
 
 { #category : 'visiting' }
 TVisitorRudesheim >> visitColumnRudesheim: aTColumnRudesheim [
-
 	^ self
-		visitObject: aTColumnRudesheim
+		visitObject:	aTColumnRudesheim.
 ]
 
 { #category : 'visiting' }
-TVisitorRudesheim >> visitObject:	anObject [
-	
+TVisitorRudesheim >> visitObject: anObject [
 	^ self subclassResponsibility.
 ]

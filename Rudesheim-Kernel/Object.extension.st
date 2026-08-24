@@ -7,6 +7,5 @@ Object >> releaseIfApplicableRudesheim [
 	resource, so the default is a no-op; classes that do own one override
 	this to call #releaseRudesheim. Callers send this unconditionally
 	instead of guarding with #respondsTo:."
-
-	^ self
+	^ self.
 ]

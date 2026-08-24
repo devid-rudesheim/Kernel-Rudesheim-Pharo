@@ -7,6 +7,5 @@ Trait {
 
 { #category : 'releasing' }
 TReleasableRudesheim >> releaseIfApplicableRudesheim [
-
 	self releaseRudesheim.
 ]
