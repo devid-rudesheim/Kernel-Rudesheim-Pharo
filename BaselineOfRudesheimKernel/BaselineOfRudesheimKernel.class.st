@@ -19,18 +19,18 @@ BaselineOfRudesheimKernel >> baseline: spec [
 				with:
 				[
 					spec
-						requires:	#('Rudesheim-Kernel-Base').
+						requires:	#( 'Rudesheim-Kernel-Base' ).
 				];
 				package:	'Rudesheim-Kernel'
 				with:
 				[
 					spec
-						requires:	#('Rudesheim-Kernel-Base' 'Rudesheim-Kernel-Private').
+						requires:	#( 'Rudesheim-Kernel-Base' 'Rudesheim-Kernel-Private' ).
 				];
 				group:	#core
-				with:	#('Rudesheim-Kernel-Base' 'Rudesheim-Kernel-Private' 'Rudesheim-Kernel');
+				with:	#( 'Rudesheim-Kernel-Base' 'Rudesheim-Kernel-Private' 'Rudesheim-Kernel' );
 				group:	#default
-				with:	#(#core).
+				with:	#( #core ).
 
 			spec
 				baseline:	'RudesheimUtility'
@@ -44,15 +44,15 @@ BaselineOfRudesheimKernel >> baseline: spec [
 				with:
 				[
 					spec
-						loads:	#('tests').
+						loads:	#( 'tests' ).
 				];
 				package:	'Rudesheim-Kernel-Tests'
 				with:
 				[
 					spec
-						requires:	#('Rudesheim-Kernel' 'RudesheimUtilityTests').
+						requires:	#( 'Rudesheim-Kernel' 'RudesheimUtilityTests' ).
 				];
 				group:	#tests
-				with:	#('Rudesheim-Kernel-Tests').
+				with:	#( 'Rudesheim-Kernel-Tests' ).
 		].
 ]

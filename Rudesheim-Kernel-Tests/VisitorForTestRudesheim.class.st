@@ -11,13 +11,8 @@ Class {
 VisitorForTestRudesheim class >> visitObject: anObject [
 	^
 	{
-		thisContext
-			sender
-			sender
-			selector.
-		thisContext
-			sender
-			selector.
+		thisContext sender sender selector.
+		thisContext sender selector.
 		thisContext selector
 	}.
 ]
