@@ -37,7 +37,7 @@ BaselineOfRudesheimKernel >> baseline: spec [
 				with:
 				[
 					spec
-						repository:	'github://devid-rudesheim/Utility-Rudesheim-Pharo:main'.
+						repository:	'github://devid-rudesheim/Utility-Rudesheim-Pharo:develop'.
 				];
 				project:	'RudesheimUtilityTests'
 				copyFrom:	'RudesheimUtility'
