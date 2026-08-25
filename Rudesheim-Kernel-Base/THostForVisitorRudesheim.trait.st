@@ -7,7 +7,6 @@ Trait {
 
 { #category : 'visiting' }
 THostForVisitorRudesheim >> acceptTVisitorRudesheim: aTVisitorRudesheim [
-
 	^ aTVisitorRudesheim
-		visitObject: self
+		visitObject:	self.
 ]

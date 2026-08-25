@@ -24,20 +24,11 @@ RudesheimTest >> testMembers [
 	self
 		assert:	root Column
 		equals:	ColumnRudesheim;
-		assert:	
-		root
-			Column
-			Basic
+		assert:	root Column Basic
 		equals:	BasicColumnRudesheim;
-		assert:	
-		root
-			Column
-			ForDateAndTime
+		assert:	root Column ForDateAndTime
 		equals:	ColumnForDateAndTimeRudesheim;
-		assert:	
-		root
-			Column
-			ForDuration
+		assert:	root Column ForDuration
 		equals:	ColumnForDurationRudesheim;
 		yourself.
 ]
