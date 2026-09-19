@@ -4,22 +4,21 @@ Object>>assertNotNilRudesheim and UndefinedObject>>assertNotNilRudesheim
 "
 Class {
 	#name : 'AssertNotNilRudesheimTest',
-	#superclass : 'TestCase',
+	#superclass : 'BasicRudesheimTest',
 	#category : 'Rudesheim-Kernel-Tests',
 	#package : 'Rudesheim-Kernel-Tests'
 }
 
+{ #category : 'accessing' }
+AssertNotNilRudesheimTest class >> targetClass [
+	^ OrderedCollection.
+]
+
 { #category : 'tests' }
 AssertNotNilRudesheimTest >> testNonNilReceiverAnswersItself [
-	|
-		receiver
-	|
-
-	receiver := OrderedCollection new.
-
 	self
-		assert:	receiver assertNotNilRudesheim
-		equals:	receiver.
+		assert:	self basicTarget assertNotNilRudesheim
+		equals:	self basicTarget.
 ]
 
 { #category : 'tests' }
