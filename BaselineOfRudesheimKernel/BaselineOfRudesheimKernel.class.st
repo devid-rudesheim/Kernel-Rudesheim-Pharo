@@ -33,24 +33,11 @@ BaselineOfRudesheimKernel >> baseline: spec [
 				with:	#( #core ).
 
 			spec
-				baseline:	'RudesheimUtility'
-				with:
-				[
-					spec
-						repository:	'github://devid-rudesheim/Utility-Rudesheim-Pharo:develop'.
-				];
-				project:	'RudesheimUtilityTests'
-				copyFrom:	'RudesheimUtility'
-				with:
-				[
-					spec
-						loads:	#( 'tests' ).
-				];
 				package:	'Rudesheim-Kernel-Tests'
 				with:
 				[
 					spec
-						requires:	#( 'Rudesheim-Kernel' 'RudesheimUtilityTests' ).
+						requires:	#( 'Rudesheim-Kernel' ).
 				];
 				group:	#tests
 				with:	#( 'Rudesheim-Kernel-Tests' ).
