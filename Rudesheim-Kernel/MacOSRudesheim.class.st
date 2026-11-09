@@ -1,5 +1,5 @@
 "
-Represents the current OS being macOS - overrides OSRudesheim (its superclass). Reached as `Smalltalk os rudesheim` on a Mac, or `Rudesheim OS Mac` for reflective discovery.
+Represents the current OS being macOS - overrides OSRudesheim (its superclass). Reached as `OSPlatform current rudesheim` on a Mac, or `Rudesheim OS Mac` for reflective discovery.
 "
 Class {
 	#name : 'MacOSRudesheim',
